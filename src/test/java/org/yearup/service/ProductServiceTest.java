@@ -9,8 +9,10 @@ import org.yearup.models.Product;
 import org.yearup.repository.ProductRepository;
 
 import java.util.List;
+import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
@@ -35,5 +37,22 @@ class ProductServiceTest {
 
         // assert
         assertEquals(3, found.size());
+    }
+
+    @Test
+    public void update_withNewStockValue_shouldSaveStock()
+    {
+        // arrange
+        Product existing = new Product(1, "Smartphone", 499.99, 1, "desc", "Black", 50, false, "smartphone.jpg");
+        Product newData  = new Product(1, "Smartphone", 499.99, 1, "desc", "Black", 999, false, "smartphone.jpg");
+
+        when(productRepository.findById(1)).thenReturn(Optional.of(existing));
+        when(productRepository.save(existing)).thenReturn(existing);
+
+        // act
+        Product result = productService.update(1, newData);
+
+        // assert
+        assertEquals(999, result.getStock(), "Because update() should copy the new stock value onto the existing product.");
     }
 }
