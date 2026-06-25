@@ -12,6 +12,7 @@ import java.util.List;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
@@ -53,5 +54,6 @@ class ProductServiceTest {
 
         // assert
         assertEquals(999, result.getStock(), "Because update() should copy the new stock value onto the existing product.");
+        verify(productRepository).save(existing);
     }
 }
