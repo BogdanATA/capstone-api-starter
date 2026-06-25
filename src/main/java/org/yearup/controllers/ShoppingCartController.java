@@ -22,6 +22,10 @@ public class ShoppingCartController
     private ShoppingCartService shoppingCartService;
     private UserService userService;
 
+    public ShoppingCartController(ShoppingCartService shoppingCartService, UserService userService) {
+        this.shoppingCartService = shoppingCartService;
+        this.userService = userService;
+    }
 
     // each method in this controller requires a Principal object as a parameter
     @GetMapping
