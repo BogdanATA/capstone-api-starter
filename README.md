@@ -1,4 +1,4 @@
-# Project Title
+# Bogs Games
 
 ## Description of the Project
 
