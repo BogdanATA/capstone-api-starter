@@ -51,15 +51,16 @@ Follow these steps to get your application running within IntelliJ IDEA:
 - MySQL
 
 ## Demo
-
-![Application Screenshot](path/to/your/screenshot.png)
+### Front End Demo
+![video-game-store-api-demo.gif](video-game-store-api-demo.gif)
+### Insomnia Test
+![video-game-store-insomnia.gif](video-game-store-insomnia.gif)
 
 ## Future Work
 
 Outline potential future enhancements or functionalities you might consider adding:
 
-- Additional feature to be developed.
-- Improvement of current functionalities.
+
 
 ## Resources
 
