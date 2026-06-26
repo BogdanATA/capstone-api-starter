@@ -51,6 +51,7 @@ Follow these steps to get your application running within IntelliJ IDEA:
 - MySQL
 
 ## Demo
+
 ### Front End Demo
 ![video-game-store-api-demo.gif](video-game-store-api-demo.gif)
 ### Insomnia Test
@@ -58,26 +59,27 @@ Follow these steps to get your application running within IntelliJ IDEA:
 
 ## Future Work
 
-Outline potential future enhancements or functionalities you might consider adding:
+- Add ability for users to create and edit their profile
+- Add check out feature
+- Add admin control buttons to the front end
+- Add ability to remove items 1 at a time from cart
+- Add name search up feature
 
 
 
 ## Resources
 
-List resources such as tutorials, articles, or documentation that helped you during the project.
-
-- [Java Programming Tutorial](https://www.example.com)
-- [Effective Java](https://www.example.com)
+- [Java Visual Learning Hub](https://raymaroun.github.io/yearup-java-visuals/index.html)
+- [RayMaroun solution Repos](https://github.com/RayMaroun/yearup-spring-section-8-2026)
+- [w3schools](https://www.w3schools.com/java/)
+- [JSON PATH CheatSheet](https://github.com/json-path/JsonPath)
 
 ## Team Members
 
-- **Name 1** - Specific contributions or roles.
-- **Name 2** - Specific contributions or roles.
+- **Bogdan Atamyeyev** - Developer
 
 ## Thanks
 
-Express gratitude towards those who provided help, guidance, or resources:
-
-- Thank you to [Mentor's Name] for continuous support and guidance.
-- A special thanks to all teammates for their dedication and teamwork.
+- Thank you to [Raymond Maroun] for continuous support and guidance.
+- A special thanks to all my colleagues for their help.
  
